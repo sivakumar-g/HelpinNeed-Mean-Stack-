@@ -53,7 +53,7 @@ imports: [
     NgbModule,
     AgmDirectionModule,
     AgmCoreModule.forRoot({
-      apiKey: 'AImaSyDmr3BtoLBuB87gP-tAcuSqPgTMwVodk4E',// 'AIzaSyDmr3BtoLBuB87gP-tAcuSqPgTMwVodk4E',
+      apiKey: 'AImaSyDm-YOUR_API_KEY-TMwVodk4E',// ,
       libraries: ['places']
     })
 
