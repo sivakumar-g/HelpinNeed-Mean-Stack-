@@ -1,0 +1,49 @@
+
+<div class="text-center">
+  <h1>Welcome to help in need</h1>
+    <p>
+        <button class="btn btn-primary" (click)="openGoogelMapsModal()">Open Map to choose location</button>
+    </p>
+    <h1>
+        <p *ngIf="coordinates.address">
+            Address: {{coordinates.address}}
+        </p>
+    </h1>
+    <h3>
+        <p *ngIf="coordinates.latitude">
+            Latitude: {{coordinates.latitude}}
+        </p>
+        <p *ngIf="coordinates.longitude">
+            Longitude: {{coordinates.longitude}}
+        </p>
+    </h3>
+
+    <h1>
+      <p *ngIf="helpdata.address">
+          Address: {{helpdata.address}}
+      </p>
+  </h1>
+  <h3>
+      <p *ngIf="helpdata.latitude">
+          Latitude: {{helpdata.latitude}}
+      </p>
+      <p *ngIf="helpdata.longitude">
+          Longitude: {{helpdata.longitude}}
+      </p>
+  </h3>
+
+
+
+    <p *ngIf="!coordinates.address">
+      <button class="btn btn-primary" (click)="sendDashboard()">Continue with this location</button>
+
+
+    </p>
+
+    <p *ngIf="!coordinates.address">
+    <button class="btn btn-primary" [routerLink]="['/help']">Createhelp</button>
+  </p>
+
+<app-dashboard></app-dashboard>
+
+  </div>

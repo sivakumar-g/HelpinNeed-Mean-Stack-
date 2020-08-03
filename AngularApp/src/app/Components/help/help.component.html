@@ -1,0 +1,57 @@
+
+ <div class="text-center">
+  <h1>Welcome to sivakumar rescue force</h1>
+    <p>
+        <button class="btn btn-primary" (click)="openGoogelMapsModal()">Open Google Map</button>
+    </p>
+    <h1>
+        <p *ngIf="coordinates.address">
+            Address: {{coordinates.address}}
+        </p>
+    </h1>
+    <h3>
+        <p *ngIf="coordinates.latitude">
+            Latitude: {{coordinates.latitude}}
+        </p>
+        <p *ngIf="coordinates.longitude">
+            Longitude: {{coordinates.longitude}}
+        </p>
+    </h3>
+  </div>
+
+
+
+
+<h2 class="page-header">Register</h2>
+<form (ngSubmit)="onRegisterSubmit()">
+  <div class="form-group">
+    <label>Name</label>
+    <input type="text" [(ngModel)]="name" name="name"  class="form-control"  >
+  </div>
+  <div class="form-group">
+    <label>title</label>
+    <input type="text" [(ngModel)]="title" name="title" class="form-control" >
+  </div>
+  <div class="form-group">
+    <label>description </label>
+    <input type="text" [(ngModel)]="description"  name="description" class="form-control" >
+  </div>
+  <div class="form-group">
+    <label>contact</label>
+    <input type="text" [(ngModel)]="contact" name="contact"  class="form-control">
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <input type="submit" class="btn btn-primary" value="Submit">
+</form>

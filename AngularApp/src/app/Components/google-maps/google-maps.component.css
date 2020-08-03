@@ -1,0 +1,7 @@
+.pac-container{
+  z-index: 9999;
+}
+
+agm-map {
+  height: 300px;
+}
